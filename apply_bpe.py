@@ -23,10 +23,10 @@ from io import open
 argparse.open = open
 
 # python 2/3 compatibility
-if sys.version_info < (3, 0):
-  sys.stderr = codecs.getwriter('UTF-8')(sys.stderr)
-  sys.stdout = codecs.getwriter('UTF-8')(sys.stdout)
-  sys.stdin = codecs.getreader('UTF-8')(sys.stdin)
+#if sys.version_info < (3, 0):
+#  sys.stderr = codecs.getwriter('UTF-8')(sys.stderr)
+#  sys.stdout = codecs.getwriter('UTF-8')(sys.stdout)
+#  sys.stdin = codecs.getreader('UTF-8')(sys.stdin)
 
 class BPE(object):
 
